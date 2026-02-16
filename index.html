@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemistry Experiment - Biodiesel Production</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">🧪 ChemLab</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#chemicals" class="nav-link">Chemicals</a></li>
+                <li><a href="#procedure" class="nav-link">Procedure</a></li>
+                <li><a href="#workflow" class="nav-link">Workflow</a></li>
+                <li><a href="#photos" class="nav-link">Photos</a></li>
+                <li><a href="#videos" class="nav-link">Videos</a></li>
+                <li><a href="#faq" class="nav-link">Q&A</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MODULE 1: HOME PAGE - Group Details & Faculty -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Chemistry Experiment Project</h1>
+            <p class="subtitle">Biodiesel Production & Analysis</p>
+            <div class="hero-cards">
+                <div class="info-card members-card">
+                    <h3>👥 Group Members</h3>
+                    <table class="members-table">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>PRN</th>
+                                <th>Roll No</th>
+                                <th>Batch</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mayank Dantre </td>
+                                <td>202401080047</td>
+                                <td>35</td>
+                                <td>A2</td>
+                            </tr>
+                            <tr>
+                                <td>Zaki shahpure </td>
+                                <td>202401080028</td>
+                                <td>23</td>
+                                <td>A2</td>
+                            </tr>
+                            <tr>
+                                <td>Shreya Dhamankar</td>
+                                <td>202401080026</td>
+                                <td>21</td>
+                                <td>A2</td>
+                            </tr>
+                            <tr>
+                                <td>Umesh Kuyate </td>
+                                <td>202401080042</td>
+                                <td>31</td>
+                                <td>A2</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="info-card faculty-card">
+                    <h3>👨‍🏫 Faculty Supervisor</h3>
+                    <div class="faculty-info">
+                        <div class="faculty-item">
+                            <span class="label">Name:</span>
+                            <span class="value">Dr. Abhijeet Patil</span>
+                        </div>
+                        <div class="faculty-item">
+                            <span class="label">Department:</span>
+                            <span class="value">Chemistry</span>
+                        </div>
+                        <div class="faculty-item">
+                            <span class="label">Specialization:</span>
+                            <span class="value">Chemical Engineering </span>
+                        </div>
+                        <div class="faculty-item">
+                            <span class="label">Experience:</span>
+                            <span class="value">10+ Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="project-overview">
+                <h3>📌 Project Overview</h3>
+                <p>This comprehensive project explores the production of biodiesel through advanced transesterification methods. Our focus is on sustainable energy solutions and green chemistry practices.</p>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-photo-card">
+                <h3 class="hero-photo-title">Group Photo</h3>
+                <img src="group.jpeg" alt="Project group photo" class="hero-group-photo">
+            </div>
+        </div>
+    </section>
+    <!-- MODULE 2: LIST OF CHEMICALS -->
+    <section id="chemicals" class="module-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🧪 Chemicals & Materials</h2>
+                <p>Complete list of chemicals and equipment used in the biodiesel production experiment</p>
+            </div>
+
+            <div class="section-media">
+                <img src="assets/chemicals.jpeg" alt="Chemicals label" class="section-image">
+            </div>
+
+            <div class="chemicals-grid">
+                <div class="chemical-category">
+                    <h3>Reactants</h3>
+                    <div class="chemical-list">
+                        <div class="chemical-item">
+                            <span class="chem-name">Castor Oil (Triglycerides)</span>
+                            <span class="chem-formula">C₅₇H₁₀₄O₆</span>
+                            <span class="chem-qty">50 mL</span>
+                            <span class="chem-grade">Filtered</span>
+                        </div>
+                        <div class="chemical-item">
+                            <span class="chem-name">Methanol</span>
+                            <span class="chem-formula">CH₃OH</span>
+                            <span class="chem-qty">8 mL</span>
+                            <span class="chem-grade">Lab Grade</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chemical-category">
+                    <h3>Catalyst</h3>
+                    <div class="chemical-list">
+                        <div class="chemical-item">
+                            <span class="chem-name">Sodium Hydroxide (NaOH)</span>
+                            <span class="chem-formula">NaOH</span>
+                            <span class="chem-qty">2.5 g</span>
+                            <span class="chem-grade">Pellets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chemical-category">
+                    <h3>Solvent & Additive</h3>
+                    <div class="chemical-list">
+                        <div class="chemical-item">
+                            <span class="chem-name">Water</span>
+                            <span class="chem-formula">H₂O</span>
+                            <span class="chem-qty">5-6 drops</span>
+                            <span class="chem-grade">Distilled</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chemical-category">
+                    <h3>Equipment & Apparatus</h3>
+                    <div class="chemical-list">
+                        <div class="chemical-item">
+                            <span class="chem-name">Ultrasonicator</span>
+                            <span class="chem-formula">-</span>
+                            <span class="chem-qty">1 unit</span>
+                            <span class="chem-grade">Laboratory Grade</span>
+                        </div>
+                        <div class="chemical-item">
+                            <span class="chem-name">Beakers</span>
+                            <span class="chem-formula">-</span>
+                            <span class="chem-qty">Multiple</span>
+                            <span class="chem-grade">Borosilicate Glass</span>
+                        </div>
+                        <div class="chemical-item">
+                            <span class="chem-name">Flask</span>
+                            <span class="chem-formula">-</span>
+                            <span class="chem-qty">1 unit</span>
+                            <span class="chem-grade">Borosilicate Glass</span>
+                        </div>
+                        <div class="chemical-item">
+                            <span class="chem-name">Stand (24-hour settling)</span>
+                            <span class="chem-formula">-</span>
+                            <span class="chem-qty">1 unit</span>
+                            <span class="chem-grade">Stable Support</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="safety-warning">
+                <h4>⚠️ Safety Precautions</h4>
+                <ul>
+                    <li>Always wear safety goggles, gloves, and lab coat</li>
+                    <li>Work in well-ventilated area or fume hood</li>
+                    <li>Handle strong bases and acids with extreme care</li>
+                    <li>Never mix chemicals without proper guidance</li>
+                    <li>Have first aid kit readily available</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE 3: EXPERIMENTAL PROCEDURE -->
+    <section id="procedure" class="module-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🔬 Experimental Procedure</h2>
+                <p>Step-by-step guide for biodiesel production using ultrasonic transesterification</p>
+            </div>
+
+            <div class="procedure-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content">
+                        <h3>Preparation Phase</h3>
+                        <p><strong>Time: 10-15 minutes</strong></p>
+                        <ul>
+                            <li>Filter castor oil to remove impurities</li>
+                            <li>Measure 50 mL of castor oil into a clean, dry flask</li>
+                            <li>Measure 8 mL of methanol and 2.5 g NaOH separately</li>
+                            <li>Keep 5-6 drops of distilled water ready</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content">
+                        <h3>Catalyst Preparation</h3>
+                        <p><strong>Time: 5 minutes</strong></p>
+                        <ul>
+                            <li>Dissolve 2.5 g NaOH in 8 mL methanol (in a beaker)</li>
+                            <li>Stir until completely dissolved to form sodium methoxide</li>
+                            <li>Add 5-6 drops of distilled water as used in the run</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content">
+                        <h3>Mixing & Ultrasonic Treatment</h3>
+                        <p><strong>Time: 20-30 minutes</strong></p>
+                        <ul>
+                            <li>Pour sodium methoxide solution into the castor oil</li>
+                            <li>Place the flask in the ultrasonicator</li>
+                            <li>Sonicate the mixture for 20-30 minutes</li>
+                            <li>After sonication, keep the mixture on a stand for 24 hours</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content">
+                        <h3>Phase Separation</h3>
+                        <p><strong>Time: 24 hours (settling)</strong></p>
+                        <ul>
+                            <li>Allow the mixture to settle undisturbed on the stand</li>
+                            <li>Two distinct layers form: biodiesel (top) and glycerol (bottom)</li>
+                            <li>Observed volumes: biodiesel 32 mL and glycerol 28 mL</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">5</div>
+                    <div class="timeline-content">
+                        <h3>Optional Washing</h3>
+                        <p><strong>Time: 15-20 minutes (multiple cycles)</strong></p>
+                        <ul>
+                            <li>Transfer biodiesel to a clean flask</li>
+                            <li>Add a small amount of warm distilled water</li>
+                            <li>Shake gently and allow to separate</li>
+                            <li>Repeat washing until the water is clear</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">6</div>
+                    <div class="timeline-content">
+                        <h3>Drying & Final Product</h3>
+                        <p><strong>Time: 30-45 minutes</strong></p>
+                        <ul>
+                            <li>Allow biodiesel to dry before storage</li>
+                            <li>Store in a clean, dry glass container</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-number">7</div>
+                    <div class="timeline-content">
+                        <h3>Quality Testing</h3>
+                        <p><strong>Time: 20-30 minutes</strong></p>
+                        <ul>
+                            <li>Check clarity: biodiesel should be clear and bright yellow</li>
+                            <li>Perform acid number test</li>
+                            <li>Check flash point using flash point tester</li>
+                            <li>Measure viscosity at 40°C</li>
+                            <li>Record all observations and measurements</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="calculation-box">
+                <h3>Observed Output</h3>
+                <div class="formula">
+                    <p><strong>Biodiesel (top layer): 32 mL</strong></p>
+                    <p><strong>Glycerol (bottom layer): 28 mL</strong></p>
+                    <p>Percentage Yield = (Mass of Biodiesel Obtained / Initial Oil Mass) × 100</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE 4: PROCESS & WORKFLOW DIAGRAM -->
+    <section id="workflow" class="module-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>⚙️ Process & Workflow Diagram</h2>
+                <p>Visual representation of the biodiesel production process</p>
+            </div>
+
+            <div class="diagram-grid">
+                <div class="diagram-card">
+                    <img src="flow.png" alt="Process flow diagram" class="diagram-image">
+                    <p class="diagram-caption">Flow diagram of the biodiesel production process</p>
+                </div>
+                <div class="diagram-card">
+                    <img src="Block_Diagram.png" alt="Block diagram" class="diagram-image">
+                    <p class="diagram-caption">Block diagram showing the overall process layout</p>
+                </div>
+            </div>
+
+            <div class="workflow-diagram">
+                <div class="flow-chart">
+                    <div class="flow-box">
+                        <h4>Raw Materials</h4>
+                        <p>Castor Oil (50 mL)</p>
+                        <p>Methanol (8 mL)</p>
+                        <p>NaOH (2.5 g)</p>
+                        <p>Water (5-6 drops)</p>
+                    </div>
+
+                    <div class="arrow">➡️</div>
+
+                    <div class="flow-box">
+                        <h4>Catalyst Preparation</h4>
+                        <p>Mix NaOH + Methanol</p>
+                        <p>Form Sodium Methoxide</p>
+                    </div>
+
+                    <div class="arrow">➡️</div>
+
+                    <div class="flow-box">
+                        <h4>Heating & Mixing</h4>
+                        <p>Oil temp: 50-55°C</p>
+                        <p>Add catalyst solution</p>
+                    </div>
+                </div>
+
+                <div class="flow-chart">
+                    <div class="flow-box">
+                        <h4>Ultrasonic Treatment</h4>
+                        <p>40-45 kHz frequency</p>
+                        <p>Duration: 20-30 min</p>
+                    </div>
+
+                    <div class="arrow">➡️</div>
+
+                    <div class="flow-box">
+                        <h4>Phase Separation</h4>
+                        <p>Biodiesel: 32 mL (top)</p>
+                        <p>Glycerol: 28 mL (bottom)</p>
+                    </div>
+
+                    <div class="arrow">➡️</div>
+
+                    <div class="flow-box">
+                        <h4>Washing & Purification</h4>
+                        <p>Wash with distilled water</p>
+                        <p>Repeat 3-4 cycles</p>
+                    </div>
+                </div>
+
+                <div class="flow-chart">
+                    <div class="flow-box">
+                        <h4>Drying Process</h4>
+                        <p>Add Na₂SO₄ or CaCl₂</p>
+                        <p>Filter to remove drying agent</p>
+                    </div>
+
+                    <div class="arrow">➡️</div>
+
+                    <div class="flow-box">
+                        <h4>Quality Control Testing</h4>
+                        <p>Clarity check</p>
+                        <p>Acid number test</p>
+                    </div>
+
+                    <div class="arrow">➡️</div>
+
+                    <div class="flow-box final">
+                        <h4>✓ Final Biodiesel</h4>
+                        <p>Ready for storage/use</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reaction-details">
+                <h3>Chemical Reaction Overview</h3>
+                <div class="reaction-box">
+                    <p class="reaction-equation">
+                        <strong>Triglyceride (Castor Oil) + 3 CH₃OH → 3 RCOOCH₃ (Biodiesel) + C₃H₈O₃ (Glycerol)</strong>
+                    </p>
+                    <p>Where:</p>
+                    <ul>
+                        <li>Triglyceride = Castor oil</li>
+                        <li>CH₃OH = Methanol</li>
+                        <li>RCOOCH₃ = Fatty Acid Methyl Esters (Biodiesel)</li>
+                        <li>C₃H₈O₃ = Glycerol (Byproduct)</li>
+                    </ul>
+                    <p><strong>Observed products:</strong> Biodiesel 32 mL and glycerol 28 mL.</p>
+                </div>
+            </div>
+
+            <div class="conditions-table">
+                <h3>Optimized Reaction Conditions</h3>
+                <table class="detailed-table">
+                    <thead>
+                        <tr>
+                            <th>Parameter</th>
+                            <th>Value</th>
+                            <th>Unit</th>
+                            <th>Effect</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Temperature</td>
+                            <td>50-60</td>
+                            <td>°C</td>
+                            <td>Enhances reaction rate</td>
+                        </tr>
+                        <tr>
+                            <td>Ultrasonic Frequency</td>
+                            <td>40-45</td>
+                            <td>kHz</td>
+                            <td>Improves mixing</td>
+                        </tr>
+                        <tr>
+                            <td>Methanol Ratio</td>
+                            <td>6:1</td>
+                            <td>mol/mol</td>
+                            <td>Optimal conversion</td>
+                        </tr>
+                        <tr>
+                            <td>Catalyst Concentration</td>
+                            <td>1.5-2</td>
+                            <td>wt%</td>
+                            <td>Accelerates reaction</td>
+                        </tr>
+                        <tr>
+                            <td>Reaction Time</td>
+                            <td>20-30</td>
+                            <td>min</td>
+                            <td>Complete conversion</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE 4.5: RESULTS -->
+    <section id="results" class="module-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📊 Results</h2>
+                <p>Observed outputs from the castor oil transesterification run</p>
+            </div>
+
+            <div class="calculation-box">
+                <h3>Product Volumes</h3>
+                <div class="formula">
+                    <p><strong>Biodiesel (top layer): 32 mL</strong></p>
+                    <p><strong>Glycerol (bottom layer): 28 mL</strong></p>
+                    <p>Settling time: 24 hours</p>
+                    <p>Equipment used: ultrasonicator, beakers, flask, and stand</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MODULE 5: PHOTOS/GALLERY -->
+    <section id="photos" class="module-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>📸 Photo Gallery</h2>
+                <p>Visual documentation of the experimental setup and process</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="assets/working2.jpeg" alt="Lab setup and equipment" class="gallery-image">
+                    <p class="image-caption">Lab setup and equipment used in the experiment</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="flow.png" alt="Process flow diagram" class="gallery-image">
+                    <p class="image-caption">Flow diagram of the biodiesel production process</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="Block_Diagram.png" alt="Block diagram" class="gallery-image">
+                    <p class="image-caption">Block diagram showing the overall process layout</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/Catalyst%20Preparation.jpeg" alt="Catalyst preparation" class="gallery-image">
+                    <p class="image-caption">Catalyst preparation: NaOH dissolved in methanol</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/working3.jpeg" alt="Ultrasonic treatment in progress" class="gallery-image">
+                    <p class="image-caption">Ultrasonic treatment in progress</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/sepratoryfunnel.jpg" alt="Separatory funnel showing phase separation" class="gallery-image">
+                    <p class="image-caption">Separatory funnel showing biodiesel (top) and glycerol (bottom)</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/Washing%20Process.jpeg" alt="Washing process" class="gallery-image">
+                    <p class="image-caption">Washing process for biodiesel purification</p>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="assets/product.jpg" alt="Final biodiesel product" class="gallery-image">
+                    <p class="image-caption">Final product: biodiesel (32 mL) and glycerol (28 mL)</p>
+                </div>
+            </div>
+
+            <!-- <div class="photo-note">
+                <p><strong>📁 Note:</strong> Placeholder images are shown above. Create an <code>assets/photos/</code> folder and upload your actual laboratory photographs to replace these placeholders.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- MODULE 6: VIDEOS -->
+    <section id="videos" class="module-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>🎬 Video Content</h2>
+                <p>Educational videos explaining the experimental process and concepts</p>
+            </div>
+
+            <div class="videos-grid">
+                <div class="video-card">
+                    <div class="video-embed">
+                        <iframe
+                            src="https://www.youtube.com/embed/47tGa-iOtLU"
+                            title="What is Biodiesel"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+                    <h4>What is Biodiesel?</h4>
+                    <p>A comprehensive introduction to biodiesel, its importance, and environmental benefits.</p>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-embed">
+                        <video controls preload="metadata">
+                            <source src="assets/ultrasonicator.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>Ultrasonicator Run</h4>
+                    <p>Ultrasonic treatment during transesterification.</p>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-embed">
+                        <video controls preload="metadata">
+                            <source src="assets/final_explaination_video.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h4>Team Explanation</h4>
+                    <p>Our team explains the experiment and observations.</p>
+                </div>
+
+            </div>
+
+            <!-- <div class="video-note">
+                <p><strong>📁 Note:</strong> Video placeholders are displayed above. Create an <code>assets/videos/</code> folder and add your video files or embed YouTube links.</p>
+            </div> -->
+        </div>
+    </section>
+
+    <!-- MODULE 7: FAQ & Q&A -->
+    <section id="faq" class="module-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>❓ Frequently Asked Questions</h2>
+                <p>Common questions about biodiesel production and the experiment</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is biodiesel?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Biodiesel is a renewable fuel made from vegetable oils, animal fats, or recycled cooking oil. It's produced through a process called transesterification, where oils are chemically converted into fatty acid methyl esters that can be used in diesel engines.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Why is ultrasonic treatment better than conventional methods?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Ultrasonic waves create cavitation bubbles that enhance mixing and mass transfer, reducing reaction time from hours to minutes. This increases efficiency, improves yield, and reduces energy consumption compared to traditional mechanical stirring.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the expected yield of biodiesel?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>With proper experimental technique, you can expect a yield of 90-95%. The yield depends on oil quality, catalyst concentration, temperature, and reaction time. Some loss occurs during washing and drying steps.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can we use other oils besides vegetable oil?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Animal fats (tallow, lard), waste cooking oil, and algae oil can all be used. However, their free fatty acid content varies, which affects the catalyst requirement. High acid content oils may require acid esterification first.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What happens to the glycerin byproduct?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Glycerin (glycerol) is a valuable byproduct that can be used in pharmaceuticals, cosmetics, and other applications. It can be purified further through distillation for commercial use.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How does catalyst concentration affect the reaction?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Catalyst concentration should be 1.5-2% by weight of oil. Too little catalyst slows the reaction; too much can cause side reactions and affect product purity. The optimal range maximizes conversion while maintaining quality.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Why is washing necessary?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Washing removes unreacted methanol, catalyst residues, and soap formed during the reaction. These impurities can affect fuel quality, corrosion properties, and engine performance. Multiple washing cycles ensure purity.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What is the ideal reaction temperature?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>The ideal temperature is 50-60°C. This range balances reaction speed with methanol evaporation prevention. Below 50°C, the reaction is slower; above 60°C, methanol loss increases, reducing yield.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>Can we use ethanol instead of methanol?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Ethanol can be used as an alternative. It produces ethyl esters instead of methyl esters. However, ethanol requires higher temperatures and longer reaction times. The final product properties are slightly different but still viable as biodiesel.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>What are the environmental benefits of biodiesel?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Biodiesel reduces CO₂ emissions by up to 78% compared to fossil diesel, is biodegradable, non-toxic, and supports sustainable agriculture. It reduces dependence on fossil fuels and can help combat climate change.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question">
+                        <span>How is biodiesel stored?</span>
+                        <span class="faq-icon">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Biodiesel should be stored in clean, dry containers in a cool place away from light. It can absorb water and oxidize if exposed to air and light. Proper storage maintains fuel quality for longer periods.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Chemistry Experiment - Biodiesel Production. All rights reserved.</p>
+            <p>Supervised by Dr. Rajesh Verma | Department of Chemistry</p>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
